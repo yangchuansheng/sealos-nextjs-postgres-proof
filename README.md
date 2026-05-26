@@ -15,7 +15,7 @@ It does not include real credentials. Set `DATABASE_URL` at runtime.
 ## Environment
 
 ```bash
-DATABASE_URL=postgres://USER:PASSWORD@HOST:5432/DBNAME
+DATABASE_URL="postgresql://<db_user>:<db_password>@<db_host>:5432/<db_name>"
 ```
 
 ## Local development
