@@ -1,0 +1,29 @@
+{
+  "name": "sealos-nextjs-postgres-proof",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p 3000",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p 3000",
+    "db:setup": "node scripts/setup-db.mjs",
+    "lint": "npm run typecheck",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@next/env": "^15.0.0",
+    "next": "^15.0.0",
+    "pg": "^8.13.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.0.0",
+    "typescript": "^5.6.0"
+  }
+}
